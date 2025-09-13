@@ -18,6 +18,7 @@ body{
   background:var(--bg); color:var(--text); line-height:1.6;
 }
 
+
 /* ===== Utilities ===== */
 .container{max-width:1200px;margin:0 auto;padding:0 24px}
 .section{padding:80px 0}
@@ -166,3 +167,36 @@ body{
   .cards{grid-template-columns:1fr}
   .contact-grid{grid-template-columns:1fr}
 }
+/* Floating Text*/
+{
+    margin: 0;
+    height: 100vh;
+    background-color: #222;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.floating-text {
+    position: fixed;
+    top: 50%;
+    font-size: 64px;
+    white-space: nowrap;
+    color: rgb(1, 23, 109); /* Dark blue text color */
+    animation: floatHorizontal 8s linear infinite;
+}
+
+@keyframes floatHorizontal {
+    0% {
+        transform: translateX(100vw);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+}
+
