@@ -1,3 +1,4 @@
+alert("We Are Coming Soon With Fully working Website.....")
 // Mobile menu
 const menuBtn = document.getElementById('menuToggle');
 const nav = document.getElementById('nav');
@@ -75,3 +76,4 @@ if (form) {
     form.reset();
   });
 }
+
